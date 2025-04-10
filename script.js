@@ -1,19 +1,25 @@
 
-const contador = document.querySelector('.quantidade');
-const buttonDeAdd = document.querySelector('.adicionar-button');
-const buttonDeRemove = document.querySelector('.remover-button');
+const produtos = document.querySelectorAll('.caixa-produto');
 
-buttonDeAdd.addEventListener('click', () => {
-    let value = parseInt(contador.value);
-    value += 1;
-    contador.value = value;
-});
+produtos.forEach(produto => {
+    const contador = produto.querySelector('.quantidade');
+    const buttonDeAdd = produto.querySelector('.adicionar-button');
+    const buttonDeRemove = produto.querySelector('.remover-button');
 
-buttonDeRemove.addEventListener('click', () => {
-    let value = parseInt(contador.value);
-    if (value >0){
-        value -= 1;
+    buttonDeAdd.addEventListener('click', () => {
+        let value = parseInt(contador.value);
+        value += 1;
         contador.value = value;
-    }
+    });
+
+    buttonDeRemove.addEventListener('click', () => {
+        let value = parseInt(contador.value);
+        if (value >0){
+            value -= 1;
+            contador.value = value;
+        }
+    });
 });
+
+
 

@@ -80,6 +80,7 @@ header svg {
     background-color: #007bff;
     color: white;
     width: 15%;
+    margin-right: 5px;
 }
 
 .adicionar-button:hover {
@@ -90,6 +91,7 @@ header svg {
     background-color: #e14e4e;
     color: white;
     width: 15%;
+    margin-left: 5px;
 }
 
 .remover-button:hover {
@@ -98,7 +100,23 @@ header svg {
 
 .quantidade {
     background-color: #fff;
-    width: 10%;
-    margin-left: 14px;
+    width: 14%;
     font-size: 15px;
+    margin-left: 18px;
 }
+
+#carrinho-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #c7e4ce;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    transform: translateX(100%);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+
+

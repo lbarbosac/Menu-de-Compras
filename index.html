@@ -9,10 +9,12 @@
 <body>
     <header>
         <h1>Menu de Compras</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
-        <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
-        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-    </svg>
+        <div id="carrinho-sidebar" class="carrinho-fechado">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="cart" viewBox="0 0 16 16">
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg>
+        </div>
     </header>
 <div class="container">
     <div class="caixa-produto">
@@ -29,7 +31,7 @@
     <div class="caixa-produto">
         <h1>Produto 2</h1>
         <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwaa6e0b5b/TH6709_031_24.jpg?imwidth=615&impolicy=pctp" alt="Produto 2">
-        <h2>199,80</h2>
+        <h2>199,90</h2>
         <div class="buttons">
             <button class="comprar-button">Comprar</button>
             <button class="remover-button">-</button>
@@ -40,7 +42,7 @@
     <div class="caixa-produto">
         <h1>Produto 3</h1>
         <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw54416a1e/TH6709_HBM_24.jpg?imwidth=615&impolicy=pctp" alt="Produto 3">
-        <h2>199,70</h2>
+        <h2>199,90</h2>
         <div class="buttons">
             <button class="comprar-button">Comprar</button>
             <button class="remover-button">-</button>
@@ -49,6 +51,6 @@
         </div>
     </div>
 </div>
-<script src="script.js"></script>
+<script defer src="script.js"></script>
 </body>
 </html>
