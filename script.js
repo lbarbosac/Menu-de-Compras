@@ -16,3 +16,4 @@ buttonDeRemove.addEventListener('click', () => {
         contador.value = value;
     }
 });
+
